@@ -12,8 +12,11 @@ public final class NameExtension {
 
     /**
      * 小写的名称，由Name计算而来
-     * 示例：Student -> STUDENT
-     * 示例：StudentScore -> STUDENT_SCORE
+     * 示例：Student -&gt; STUDENT
+     * 示例：StudentScore -&gt; STUDENT_SCORE
+     *
+     * @param name Name
+     * @return 小写的名称
      */
     public static String toUpperCaseUnderLine(String name) {
         List<String> items = ToItems(name);
@@ -23,8 +26,11 @@ public final class NameExtension {
 
     /**
      * 小写的名称，由Name计算而来
-     * 示例：Student -> student
-     * 示例：StudentScore -> student_score
+     * 示例：Student -&gt; student
+     * 示例：StudentScore -&gt; student_score
+     *
+     * @param name Name
+     * @return 小写的名称
      */
     public static String toLowerCaseUnderLine(String name) {
         List<String> items = ToItems(name);
@@ -34,8 +40,11 @@ public final class NameExtension {
 
     /**
      * 小写的名称，由Name计算而来
-     * 示例：Student -> student
-     * 示例：StudentScore -> student-score
+     * 示例：Student -&gt; student
+     * 示例：StudentScore -&gt; student-score
+     *
+     * @param name Name
+     * @return 小写的名称
      */
     public static String toLowerCaseBreakLine(String name) {
         List<String> items = ToItems(name);
@@ -45,7 +54,10 @@ public final class NameExtension {
 
     /**
      * 将数据库表名转换成实体名称
-     * 示例：student_score -> StudentScore
+     * 示例：student_score -&gt; StudentScore
+     *
+     * @param name Name
+     * @return 将数据库表名转换成实体名称
      */
     public static String toUpperCamelCase(String name) {
         List<String> items = ToItems(name);
@@ -61,6 +73,8 @@ public final class NameExtension {
     /**
      * 由Name计算而来
      * 示例：name, studentScore
+     *
+     * @return 由Name计算而来
      */
     public static String toLowerCamelCase(String name) {
         List<String> items = ToItems(name);
