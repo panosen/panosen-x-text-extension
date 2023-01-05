@@ -1,7 +1,6 @@
 package com.panosen;
 
-import com.google.common.collect.Lists;
-
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -114,7 +113,7 @@ public final class NameExtension {
      * 拆分字符串
      */
     private static List<String> ToItems(String text) {
-        List<String> items = Lists.newArrayList();
+        List<String> items = new ArrayList<>();
         StringBuilder builder = new StringBuilder();
 
         CharItem lastCharItem = null;
